@@ -1,9 +1,9 @@
 <?php
 
-namespace shuklajasmin\Track;
+namespace Shuklajasmin\Track;
 
 use Illuminate\Support\ServiceProvider;
-use shuklajasmin\Track\Console\Commands\ShuklajasminInstallCommand;
+use Shuklajasmin\Track\Console\Commands\ShuklajasminInstallCommand;
 
 class TrackServiceProvider extends ServiceProvider
 {
