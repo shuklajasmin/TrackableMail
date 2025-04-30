@@ -6,17 +6,17 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration {
     public function up(): void {
-        if (!Schema::hasTable('shukla_jasmin_campaign_mails')) {
-            Schema::create('shukla_jasmin_campaign_mails', function (Blueprint $table) {
+        if (!Schema::hasTable('shukla_jasmin_email_opens')) {
+            Schema::create('shukla_jasmin_email_opens', function (Blueprint $table) {
                 $table->id();
-                $table->string('email');
-                $table->string('subject');
+                $table->foreignId('campaign_id');
+                $table->timestamp('opened_at')->nullable();
                 $table->timestamps();
             });
         }
     }
 
     public function down(): void {
-        Schema::dropIfExists('shukla_jasmin_campaign_mails');
+        Schema::dropIfExists('shukla_jasmin_email_opens');
     }
 };

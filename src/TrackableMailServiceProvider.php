@@ -1,6 +1,6 @@
 <?php
 
-namespace shukaljasmin\TrackableMail;
+namespace shukaljasmin\Track;
 
 use Illuminate\Support\ServiceProvider;
 

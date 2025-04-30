@@ -1,5 +1,5 @@
 <?php
-namespace  Shuklajasmin\Track;
+namespace Shuklajasmin\Track;
 
 class Track
 {

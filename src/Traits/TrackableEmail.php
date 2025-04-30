@@ -1,9 +1,9 @@
 <?php
 
-namespace  Shuklajasmin\Track;
+namespace Shuklajasmin\Track\Traits;
 
-use App\Models\CampaignMail;
 use Illuminate\Mail\Events\MessageSending;
+use Shuklajasmin\Track\Models\CampaignMail;
 use Symfony\Component\Mime\Address;
 
 trait TrackableEmail
