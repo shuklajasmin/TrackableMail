@@ -1,14 +1,50 @@
 {
     "name": "shuklajasmin/track",
-    "description": "Track package helps you track your every URL. Also, the package delivered to you the number of open rates and delivery rate.",
+    "description": "Track package helps you track your every URL. Also, the package delivered to you the number of open rates.",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Jasmin Shukla",
+            "email": "mr.jasmin.shukla@gmail.com",
+            "homepage": "https://jasminshukla.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/shuklajasmin/TrackableMail/issues",
+        "source": "https://github.com/shuklajasmin/TrackableMail"
+    },
+    "keywords": [
+        "laravel",
+        "email",
+        "email tracking",
+        "email open tracking",
+        "tracking pixel",
+        "email read receipt",
+        "email analytics",
+        "mailable tracking",
+        "open email logger",
+        "email monitoring",
+        "laravel mail",
+        "campaign tracking",
+        "email tracker",
+        "laravel email tracker"
+    ],
     "autoload": {
         "psr-4": {
             "Shuklajasmin\\Track\\": "src/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
     "require": {
+        "php": ">=8.2.0",
+        "laravel/framework": "^10.0"
+    },
+    "require-dev": {
         "php": ">=8.2.0",
         "laravel/framework": "^10.0"
     },
@@ -18,11 +54,5 @@
                 "Shuklajasmin\\Track\\TrackServiceProvider"
             ]
         }
-    },
-    "authors": [
-        {
-            "name": "Jasmin Shukla",
-            "email": "mr.jasmin.shukla@gmail.com"
-        }
-    ]
+    }
 }
