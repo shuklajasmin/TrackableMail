@@ -7,11 +7,10 @@
             "Shuklajasmin\\Track\\": "src/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=8.2.0",
-        "laravel/framework": "^10.0", 
-        "shuklajasmin/track": "v0.1.0"
+        "laravel/framework": "^10.0"
     },
     "extra": {
         "laravel": {
