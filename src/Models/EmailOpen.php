@@ -8,5 +8,5 @@ class EmailOpen extends Model
 {
     protected $table = 'shukla_jasmin_email_opens';
 
-    protected $fillable=['opened_at','campaign_id'];
+    protected $fillable=['opened_at','campaign_id','device_ip','user_agent'];
 }
