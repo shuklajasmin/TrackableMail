@@ -13,11 +13,14 @@ class EmailOpenController extends Controller
 
         // $request->ip();
         // $request->userAgent();
-        EmailOpen::updateOrCreate(
-            ['campaign_id' => $request->campaign],
-            ['opened_at' => now()]
-        );
-    
+
+        EmailOpen::create([
+            'campaign_id' => $request->campaign,
+            'opened_at' => now(),
+            'device_ip'=> $request->ip() ?? "-",
+            'user_agent'=> $request->userAgent() ?? "-",
+        ]);
+        
         // Return transparent image
         $path = public_path('images/transparent.png');
         return response()->file($path, [

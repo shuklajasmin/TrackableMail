@@ -8,8 +8,9 @@ return new class extends Migration {
     public function up(): void {
         Schema::create('shukla_jasmin_email_opens', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('subscriber_id');
             $table->foreignId('campaign_id');
+            $table->string('device_ip');
+            $table->string('user_agent');
             $table->timestamp('opened_at')->nullable();
             $table->timestamps();
         });
