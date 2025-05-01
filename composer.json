@@ -7,6 +7,12 @@
             "Shuklajasmin\\Track\\": "src/"
         }
     },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.2.0",
+        "laravel/framework": "^10.0", 
+        "shuklajasmin/track": "v0.1.0"
+    },
     "extra": {
         "laravel": {
             "providers": [
@@ -19,6 +25,5 @@
             "name": "Jasmin Shukla",
             "email": "mr.jasmin.shukla@gmail.com"
         }
-    ],
-    "require": {}
+    ]
 }
